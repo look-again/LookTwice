@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LookTwice</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="nav-wrap">
+    <nav class="nav" aria-label="Primary">
+      <div class="brand">
+        <span class="title">LookTwice</span>
+        <span class="dot" aria-hidden="true"></span>
+      </div>
+      <div class="nav-links mono">
+        <a href="index.html">Home</a>
+        <a href="archive.html">Writings</a>
+        <a href="manifesto.html">Manifesto</a>
+        <a href="themes.html">Themes</a>
+        <a href="contact.html">Contact</a>
+        <a class="subscribe" href="#subscribe">Subscribe</a>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero">
+    <!-- Replace hero.jpg with your mountain image filename -->
+    <img src="hero.jpg" alt="Three figures facing a mountain landscape" />
+    <div class="hero-inner">
+      <h1 class="tagline h-sans">A space for noticing again.</h1>
+      <p class="subline">Writing about the moments that ask you to look twice.</p>
+      <div class="hero-meta mono">
+        <span>Quiet essays</span><span aria-hidden="true">·</span><span>Occasional letters</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="marquee" aria-label="Marquee">
+    <div class="container">
+      <div class="marquee-track" aria-hidden="true">
+        <span>THE WAY LIGHT HOLDS A DOORFRAME AT DUSK</span><span class="sep">·</span>
+        <span>WHAT WE CARRY WITHOUT NAMING</span><span class="sep">·</span>
+        <span>THE PAUSE BEFORE THE HONEST THING</span><span class="sep">·</span>
+        <span>A HAND ON THE SMALL OF YOUR BACK</span><span class="sep">·</span>
+        <span>THE SECOND LOOK</span><span class="sep">·</span>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <p class="kicker mono">Featured</p>
+        <h2 class="h2 h-sans">Writings</h2>
+        <p class="lede">A small set of pieces—meant to be reread, not consumed.</p>
+
+        <div class="list">
+          <a class="item" href="article.html">
+            <p class="title h-sans">The Second Look</p>
+            <div class="meta mono"><span>Jan 31, 2026</span><span aria-hidden="true">·</span><span>4 min</span></div>
+            <p class="excerpt">There is a moment, just after the first glance, where everything you thought you saw rearranges itself.</p>
+          </a>
+
+          <a class="item" href="article.html">
+            <p class="title h-sans">On Tenderness as a Political Act</p>
+            <div class="meta mono"><span>Jan 14, 2026</span><span aria-hidden="true">·</span><span>6 min</span></div>
+            <p class="excerpt">In a world that rewards hardness, choosing to be tender is not weakness—it’s a refusal.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="container">
+        <div class="grid">
+          <div class="panel">
+            <p class="kicker mono">Manifesto</p>
+            <h2 class="h2 h-sans">What we believe</h2>
+            <p class="lede">
+              LookTwice was born from a need to slow down—not as a reaction to speed, but as a commitment to attention.
+              The kind that asks you to stay with something a moment longer than is comfortable.
+            </p>
+            <a class="inline mono" href="manifesto.html">Read the manifesto</a>
+          </div>
+
+          <div class="panel">
+            <p class="kicker mono">Three lenses</p>
+            <h2 class="h2 h-sans">Ways of looking</h2>
+            <p class="lede">Not categories—overlapping concerns that shape what gets noticed.</p>
+            <hr />
+            <p class="mono">01 · Queerness &amp; gay life</p>
+            <p class="mono">02 · Attention &amp; ritual</p>
+            <p class="mono">03 · Place, memory, time</p>
+            <a class="inline mono" href="themes.html">Explore the lenses</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="subscribe">
+      <div class="container">
+        <p class="kicker mono">Subscribe</p>
+        <h2 class="h2 h-sans">Occasional letters</h2>
+        <p class="lede">When there’s something worth saying—no cadence, no pressure.</p>
+
+        <form class="newsletter" data-newsletter>
+          <input type="email" placeholder="you@example.com" aria-label="Email address" required />
+          <button type="submit" class="mono">Join</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="mono">LookTwice</div>
+      <div class="links mono">
+        <a href="archive.html">Writings</a>
+        <a href="manifesto.html">Manifesto</a>
+        <a href="themes.html">Themes</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="mono" style="margin-top:14px;">© <span id="y"></span> LookTwice</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
